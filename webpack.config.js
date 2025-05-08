@@ -42,7 +42,11 @@ const config = {
     resolve: {
         extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
     },
-    externals: {},
+    externals: {
+        "pixi.js": "pixi.js",
+        "@pixi/sound": "@pixi/sound",
+        "@pixi/devtools": "@pixi/devtools",
+    },
 };
 
 module.exports = () => {
